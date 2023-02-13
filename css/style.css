@@ -1,0 +1,195 @@
+body {margin:0;}
+:root{
+  font-family: 'Anek Malayalam', sans-serif;
+
+}
+html{
+  scroll-snap-type: y mandatory;
+}
+.hero, 
+.servicios,
+.form{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+
+.barra ul {z-index: 5;
+  position: static;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.barra li {
+  
+  float: left;
+  width: 25%;
+}
+
+.barra li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.barra li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.barra .active {
+  background-color: #04AA6D;
+}
+
+#empresatitle{
+  text-align: center;
+  padding: 5px;
+  background: linear-gradient(rgba(170, 0, 255, 0.9), rgba(200, 0, 255, 0.2));
+  border-radius: 20px;
+}
+
+.hero{
+  display: flex;
+   align-items: center;
+    height: 700px;
+   /* border: 3px solid #73AD21;*/
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('https://www2.softtek.com/hubfs/Softtek/images/Photos/Insights_Header-stk.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;    
+}
+.contenido-hero{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:aliceblue;
+
+}
+.contenido p{
+height: 50px;}
+
+#serviciosimg{
+  width: 150px;
+  height:150px;
+}
+
+
+.servicios{
+  
+  position: relative;                /*centrar horizontal y verticalmente*/
+  height: 700px;
+  /*border: 3px solid #e717a2;*/
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(186, 186, 186, 0.2));
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: 0;    
+}
+
+.polaroid {
+ 
+  position: absolute;                /*centrar horizontal y verticalmente*/
+    top: 50%;                          /*centrar horizontal y verticalmente*/  
+    left: 50%;                         /*centrar horizontal y verticalmente*/
+    transform: translate(-50%, -50%);  /*centrar horizontal y verticalmente*/
+    z-index: 0;
+  }
+
+  .tabla {
+    z-index: 0;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*PARA DARLE SOMBRA A MI CAJA¨*/
+    text-align: center;
+  }
+
+#cuadroimg{
+  height: 150px;
+  width: 400px;
+}
+
+#nombreservicio{
+  
+  font-weight: bold;
+}
+
+
+
+
+.tabla, th, td {
+  padding: 0.7%;
+}
+
+.descriptionImg {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#tituloform{
+  text-align: center;
+  overflow: hidden;
+}
+
+.form{
+  
+  /* border: 3px solid #e717a2; */
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(186, 186, 186, 0.2));
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover; 
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formulario {
+  background-color: #EEE;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+#terminos{
+
+  text-align: center;
+  text-decoration: underline;
+}
+
+#forma{
+  display:flex;
+    justify-content: center;
+    align-items: center;
+}
